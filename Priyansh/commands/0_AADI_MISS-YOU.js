@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("miss") ||
 react.includes("Miss")) {
 		var msg = {
-				body: `‌🙋 𝐌𝐄𝐑 𝐁𝐀𝐁𝐘 𝐈 𝐌𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 🙋`,attachment: fs.createReadStream(__dirname + `/AADI/KK5.jpg`)
+				body: `‌🙋 𝐌𝐄𝐑 𝐁𝐀𝐁𝐘 𝐈 𝐌𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 🙋`,attachment: fs.createReadStream(__dirname + `/noprefix/KK5.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🤩", event.messageID, (err) => {}, true)
