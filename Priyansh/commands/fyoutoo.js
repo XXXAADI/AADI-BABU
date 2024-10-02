@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if (event.body.indexOf("fuck")==0 || event.body.indexOf("Fuck")==0 || event.body.indexOf("fuck you")==0 || event.body.indexOf("Fuck you")==0 || event.body.indexOf("pakyu")==0 || event.body.indexOf("Pakyu")==0 || event.body.indexOf("pak you")==0 || event.body.indexOf("Pak you")==0 || event.body.indexOf("pak u")==0 || event.body.indexOf("Pak u")==0 || event.body.indexOf("pak yu")==0 || event.body.indexOf("Pak yu")==0) {
 		var msg = {
 				body: "F you too",
-				attachment: fs.createReadStream(__dirname + `/noprefix/fuck.gif`)
+				attachment: fs.createReadStream(__dirname + `/noprefix/Messenger_creation_1253019069211350.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
 		}
