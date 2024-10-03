@@ -59,7 +59,7 @@ https://www.instagram.com/aadi_singh__143?igsh=MXVneXZ6bzR4bHhvcg==￼
 
 ☣️Email: aadibroken046@gmail.com
 
-⚠️Wp: 9548950035 `, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
+⚠️Wp: 9548950035 `, attachment: fs.createReadStream(__dirname + "/cache/DhFHY1LcrjWZwBRkMlrtOdHr7QOeiGFMZqBGa4AEErRO.mp4")} ,threadID));
         }
         else {
                 try {
