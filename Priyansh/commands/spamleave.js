@@ -15,7 +15,7 @@ module.exports.config = {
 };
 
 module.exports.run = function({ api, event, args }) {
-	api.sendMessage("This command funcionablity when the user spaming on group chats", event.threadID, event.messageID);
+	api.sendMessage("This command functionality will trigger when the user spams in group chats", event.threadID, event.messageID);
 }; 
 
 module.exports.handleEvent = function({ api, event }) {
@@ -35,8 +35,10 @@ module.exports.handleEvent = function({ api, event }) {
 	} else {
 		messageCounts[threadID][senderID].count++;
 		if (messageCounts[threadID][senderID].count > spamThreshold) {
-			api.sendMessage("🛡️ | Detected spamming. The bot will be left from the group", threadID, messageID);
-			api.removeUserFromGroup(senderID, threadID);
+			api.sendMessage("🛡️ | Detected spamming. The bot will now leave the group.", threadID, messageID);
+			
+			// Bot will leave the group
+			api.removeUserFromGroup(api.getCurrentUserID(), threadID);
 		}
 	}
 };
