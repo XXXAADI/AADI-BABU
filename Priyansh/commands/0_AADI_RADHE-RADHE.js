@@ -1,13 +1,10 @@
-//@Prem-babu3608
-////////////////////////////////////////////////////////
-/////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT PREM BABU
 const fs = require("fs");
 module.exports.config = {
         name: "Radha",
     version: "1.1.1",
         hasPermssion: 0,
-        credits: "PREM BABU", //////@prem-babu3608
-        description: "THIS BOT IS MR PREM SHARMA",
+        credits: "AADI BABU",
+        description: "THIS BOT IS MR AADI SHARMA",
         commandCategory: "no prefix",
     cooldowns: 5, 
 };
