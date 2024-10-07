@@ -2,9 +2,9 @@ module.exports.config = {
   name: "sayeri",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "PREM BABU",
-  description: "THIS BOT IS MADE BY PREM BABU",
-  commandCategory: "PREM-STATUS",
+  credits: "AADI BABU",
+  description: "THIS BOT IS MADE BY AADI BABU",
+  commandCategory: "AADI-STATUS",
   usages: "SAYERI",
   cooldowns: 2,
   dependencies: {
