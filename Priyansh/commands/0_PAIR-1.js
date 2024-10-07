@@ -2,8 +2,8 @@ module.exports.config = {
   name: "pair",
   version: "1.0.0", 
   hasPermssion: 0,
-  credits: "PREM BABU",
-  description: "THIS BOT IS MR PREM SHARMA",
+  credits: "AADI BABU",
+  description: "THIS BOT IS MR AADI SHARMA",
   commandCategory: "COUPLE LOVE PAIRING", 
   usages: "pair", 
   cooldowns: 15
