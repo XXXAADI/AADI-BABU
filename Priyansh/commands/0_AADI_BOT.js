@@ -4,7 +4,7 @@ module.exports.config = {
   version: "1.0.1",
   hasPermssion: 0,
   credits: "AADI BABU",
-  description: "prem bot",
+  description: "aadi bot",
   commandCategory: "Noprefix",
   usages: "noprefix",
   cooldowns: 5,
