@@ -3,7 +3,7 @@ module.exports.config = {
     version: "7.3.1",
     hasPermssion: 0,
     credits: "AADI BABU",
-    description: "THIS BOT WAS MADE BY MR AADI BABU",
+    description: "THIS BOT WAS MADE BY MR PREM BABU",
     commandCategory: "PROFILE DP FRAME",
     usages: "PREFIX MENTION",
     cooldowns: 5,
@@ -22,7 +22,7 @@ module.exports.onLoad = async() => {
     const dirMaterial = __dirname + `/cache/canvas/`;
     const path = resolve(__dirname, 'cache/canvas', 'frame2.jpeg');
     if (!existsSync(dirMaterial + "canvas")) mkdirSync(dirMaterial, { recursive: true });
-    if (!existsSync(path)) await downloadFile("https://i.imgur.com/U7Rblmo.jpeg", path);
+    if (!existsSync(path)) await downloadFile("https://i.imgur.com/mxRRkRa.jpeg", path);
 }
 
 async function makeImage({ one, two }) {
@@ -36,23 +36,23 @@ async function makeImage({ one, two }) {
     let pathImg = __root + `/batman${one}_${two}.jpeg`;
     let avatarOne = __root + `/avt_${one}.jpeg`;
     let avatarTwo = __root + `/avt_${two}.jpeg`;
-    
+
     let getAvatarOne = (await axios.get(`https://graph.facebook.com/${one}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: 'arraybuffer' })).data;
     fs.writeFileSync(avatarOne, Buffer.from(getAvatarOne, 'utf-8'));
-    
+
     let getAvatarTwo = (await axios.get(`https://graph.facebook.com/${two}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: 'arraybuffer' })).data;
     fs.writeFileSync(avatarTwo, Buffer.from(getAvatarTwo, 'utf-8'));
-    
+
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
-    batgiam_img.composite(circleOne.resize(290, 290), 550, 90).composite(circleTwo.resize(260, 280), 108, 108);
-    
+    batgiam_img.composite(circleOne.resize(200, 200), 540, 90).composite(circleTwo.resize(280, 280), 108, 108);
+
     let raw = await batgiam_img.getBufferAsync("image/jpeg");
-    
+
     fs.writeFileSync(pathImg, raw);
     fs.unlinkSync(avatarOne);
     fs.unlinkSync(avatarTwo);
-    
+
     return pathImg;
 }
 async function circle(image) {
