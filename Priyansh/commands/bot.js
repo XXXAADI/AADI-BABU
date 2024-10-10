@@ -166,9 +166,7 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("Bot") == 0)) {
     var msg = {
-      body: `•💜•${name}•💜•\n\n                                                              
-
-                                                                                                                                                                                                                         ${rand}                                                                                             \n\n
+      body: `•💜•${name}•💜•\n\n.                             ${rand}                                                                                             \n\n
 𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝐀𝐚̃𝐃𝐢   𝐁𝐚𝐁𝐮`
     }
     return api.sendMessage(msg, threadID, messageID);
