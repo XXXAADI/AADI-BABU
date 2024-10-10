@@ -139,7 +139,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   
   if (event.body.indexOf("BOT") == 0 || (event.body.indexOf("BOT") == 0)) {
     var msg = {
-      body: `•💜•${name}•💜•\n\n                                                              ●=============================●
+      body: `•💜•${name}•💜•\n\n                                                              
 
                                                                                                                                                                                                                                                         ${rand}                                                                                             \n\n
 𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝐀𝐚̃𝐃𝐢   𝐁𝐚𝐁𝐮`
