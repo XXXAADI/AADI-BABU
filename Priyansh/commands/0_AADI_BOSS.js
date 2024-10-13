@@ -27,6 +27,6 @@ const fs = global.nodemodule["aadi"];
 "https://i.imgur.com/86kmX7S.jpeg",
 "https://i.imgur.com/jrYsBnF.jpeg"
      ];
-     var callback = () => api.sendMessage({body:`┏━━━━━┓\n     प्रेम-बाबू                    ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\nदेख लो मेरे बॉस प्रेम बाबू को सबसे अलग मासूम चेहरा भोली सी सूरत आखों में प्यार दिल में खुमार ♥️`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+     var callback = () => api.sendMessage({body:`┏━━━━━┓\n     प्रेम-बाबू                    ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\nदेख लो मेरे बॉस प्रेम बाबू को सबसे अलग मासूम चेहरा भोली सी सूरत आखों में प्यार दिल में खुमार ♥️`,attachment: fs.createReadStream(__dirname + "/cache', '1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache', '1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
