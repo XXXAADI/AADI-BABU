@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "prem",
+  name: "AadI",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "PREM BABU",
-  description: "THIS BOT IS MADE BY PREM BABU",
-  commandCategory: "PREM BABU IMAGE",
-  usages: "PREM-BABU",
+  credits: "AADI BABU",
+  description: "THIS BOT IS MADE BY AADI BABU",
+  commandCategory: "AADI BABU IMAGE",
+  usages: "AADI-BABU",
   cooldowns: 2,
   dependencies: {
     "request":"",
@@ -16,7 +16,7 @@ module.exports.config = {
 };
 
 module.exports.run = async({api,event,args,Users,Threads,Currencies}) => {
-const axios = global.nodemodule["boss"];
+const axios = global.nodemodule["AADI"];
 const request = global.nodemodule["Aadi"];
 const fs = global.nodemodule["aadi"];
     var link = [
