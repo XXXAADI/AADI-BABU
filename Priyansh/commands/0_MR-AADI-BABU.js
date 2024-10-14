@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "prem",
+  name: "Aadi",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "PREM BABU",
@@ -17,7 +17,7 @@ module.exports.config = {
 
 module.exports.run = async({api,event,args,Users,Threads,Currencies}) => {
 const axios = global.nodemodule["boss"];
-const request = global.nodemodule["Aadi"];
+const request = global.nodemodule["AadI"];
 const fs = global.nodemodule["aadi"];
     var link = [
 "https://i.imgur.com/bJkwri4.jpeg",
