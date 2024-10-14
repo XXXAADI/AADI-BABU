@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "Aadi",
+  name: "baBu",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "PREM BABU",
   description: "THIS BOT IS MADE BY PREM BABU",
   commandCategory: "PREM BABU IMAGE",
   usages: "PREM-BABU",
-  cooldowns: 2,
+  cooldowns: 5,
   dependencies: {
     "request":"",
     "fs-extra":"",
@@ -17,7 +17,7 @@ module.exports.config = {
 
 module.exports.run = async({api,event,args,Users,Threads,Currencies}) => {
 const axios = global.nodemodule["boss"];
-const request = global.nodemodule["AadI"];
+const request = global.nodemodule["Aadi"];
 const fs = global.nodemodule["aadi"];
     var link = [
 "https://i.imgur.com/bJkwri4.jpeg",
