@@ -14,11 +14,14 @@ module.exports.config = {
     cooldowns: 5,
 };
 
-const gif = "https://i.imgur.com/1MrF4bm.jpeg",
+const gif = [
+		"https://i.imgur.com/I9cM0yI.jpeg",
+		"https://i.imgur.com/1MrF4bm.jpeg",
 		"https://i.imgur.com/8fIaObC.jpeg",
 		"https://i.imgur.com/WxJyNrf.jpeg",
-		"https://i.imgur.com/I9cM0yI.jpeg",
-		"https://i.imgur.com/aVKNL0y.jpeg";
+		"https://i.imgur.com/aVKNL0y.jpeg"
+];
+
 const message = "● ======= 𝐇𝐄𝐋𝐋𝐎 𝐁𝐀𝐁𝐘 ======= ●☟  ========== ☟ ==========  ☟●============================● 𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝐀𝐚̃𝐃𝐢   𝐁𝐚𝐁𝐮";
 
 module.exports.handleEvent = async function({ api, event, client, Users, __GLOBAL }) {
