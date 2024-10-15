@@ -44,7 +44,7 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
 				// Select random GIF and message
 				const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
 				const randomMessage = messages[Math.floor(Math.random() * messages.length)].replace("{name}", name);
-				const downloadPath = path.join(__dirname, 'Good-Morning-Gif-Images.gif');
+				const downloadPath = path.join(__dirname, 'https://i.imgur.com/I9cM0yI.jpeg');
 
 				// Download image from Imgur
 				request(randomGif).pipe(fs.createWriteStream(downloadPath)).on('close', () => {
