@@ -49,7 +49,7 @@ OWNER: आदि
 
 ♻️Facebook: 
 
-https://www.facebook.com/bijayani.sahoo.98?mibextid=ZbWKwL
+https://www.facebook.com/profile.php?id=61567051296122&mibextid=ZbWKwL
 
 Youtube Site : N/A
 
