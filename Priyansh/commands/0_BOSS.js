@@ -6,7 +6,7 @@ module.exports.config = {
 		name: "good-morning",
 		version: "1.0.1",
 		hasPermssion: 0,
-		credits: "SHANKAR SUMAN",
+		credits: "LOVE",
 		description: "no prefix",
 	usePrefix: false,
 		commandCategory: "No command marks needed",
@@ -15,11 +15,11 @@ module.exports.config = {
 };
 
 const gifs = [
-		"https://i.imgur.com/i8F70T9.gif",
-		"https://i.imgur.com/yhmCAjC.gif",
-		"https://i.imgur.com/hOc04wc.gif",
-		"https://i.imgur.com/aQgpocY.gif",
-		"https://i.imgur.com/pzLj6IX.gif"
+		"https://i.imgur.com/aVKNL0y.jpeg",
+		"https://i.imgur.com/BJrkdEB.jpeg",
+		"https://i.imgur.com/WxJyNrf.jpeg",
+		"https://i.imgur.com/8fIaObC.jpeg",
+		"https://i.imgur.com/I9cM0yI.jpeg"
 ];
 
 const messages = [
