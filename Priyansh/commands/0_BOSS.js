@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports.config = {
-		name: "Boss",
+		name: "good-morning",
 		version: "1.0.1",
 		hasPermssion: 0,
-		credits: "BABU",
+		credits: "SHANKAR SUMAN",
 		description: "no prefix",
 	usePrefix: false,
 		commandCategory: "No command marks needed",
@@ -15,31 +15,31 @@ module.exports.config = {
 };
 
 const gifs = [
-		"https://i.imgur.com/aVKNL0y.jpeg",
-		"https://i.imgur.com/8fIaObC.jpeg",
-		"https://i.imgur.com/I9cM0yI.jpeg",
-		"https://i.imgur.com/WxJyNrf.jpeg",
-		"https://i.imgur.com/BJrkdEB.jpeg"
+		"https://i.imgur.com/i8F70T9.gif",
+		"https://i.imgur.com/yhmCAjC.gif",
+		"https://i.imgur.com/hOc04wc.gif",
+		"https://i.imgur.com/aQgpocY.gif",
+		"https://i.imgur.com/pzLj6IX.gif"
 ];
 
 const messages = [
-		"=𝐎𝐰𝐧𝐞𝐫  ➻       𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮  ●============================================================● 𝐖𝐞𝐥𝐜𝐨𝐦𝐞  𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭",
-		"=𝐎𝐰𝐧𝐞𝐫  ➻       𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮  ●============================================================● 𝐖𝐞𝐥𝐜𝐨𝐦𝐞  𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭",
-		"=𝐎𝐰𝐧𝐞𝐫  ➻       𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮  ●============================================================● 𝐖𝐞𝐥𝐜𝐨𝐦𝐞  𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭",
-		"=𝐎𝐰𝐧𝐞𝐫  ➻       𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮  ●============================================================● 𝐖𝐞𝐥𝐜𝐨𝐦𝐞  𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭",
-		"=𝐎𝐰𝐧𝐞𝐫  ➻       𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮  ●============================================================● 𝐖𝐞𝐥𝐜𝐨𝐦𝐞  𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭",
-		"=𝐎𝐰𝐧𝐞𝐫  ➻       𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮  ●============================================================● 𝐖𝐞𝐥𝐜𝐨𝐦𝐞  𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭"
+		"🌄ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ, {name}! ᴛʀʏ ꜱᴏᴍᴇ ᴄᴏꜰꜰᴇᴇ ᴏʀ ᴛᴇᴀ ᴛᴏ ᴡᴀᴋᴇ ʏᴏᴜ ᴜᴘ☀️☕",
+		"🌅ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ, {name}! ʜᴀᴠᴇ ᴀ ᴡᴏɴᴅᴇʀꜰᴜʟ ᴅᴀʏ✨",
+		"🌞ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ, {name}! ʟᴇᴛ'ꜱ ᴍᴀᴋᴇ ᴛʜɪꜱ ᴅᴀʏ ᴀᴡᴇꜱᴏᴍᴇ🌻",
+		"VERY GOOD MORNING {name} BABU🌄",
+		"very good morning {name} babu🌄",
+		"good morning {name} babu🌄"
 ];
 
 module.exports.handleEvent = async function({ api, event, client, Users, __GLOBAL }) {
 		var { threadID, messageID } = event;
 		var name = await Users.getNameUser(event.senderID);
 
-		if (event.body.toLowerCase().startsWith("आदि बाबू") || 
-				event.body.toLowerCase().startsWith("आदि") || 
-				event.body.toLowerCase().startsWith("Aadi") || 
-				event.body.toLowerCase().startsWith("aadi") || 
-				event.body.toLowerCase().startsWith("AADI")) { 
+		if (event.body.toLowerCase().startsWith("good morning") || 
+				event.body.toLowerCase().startsWith("gm") || 
+				event.body.toLowerCase().startsWith("morning") || 
+				event.body.toLowerCase().startsWith("GM") || 
+				event.body.toLowerCase().startsWith("GOOD MORNING")) { 
 
 				// Select random GIF and message
 				const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
@@ -53,7 +53,7 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
 								attachment: fs.createReadStream(downloadPath)
 						};
 						api.sendMessage(msg, threadID, messageID);
-						api.setMessageReaction("😘", event.messageID, (err) => {}, true);
+						api.setMessageReaction("🌇", event.messageID, (err) => {}, true);
 				});
 		}
 }
