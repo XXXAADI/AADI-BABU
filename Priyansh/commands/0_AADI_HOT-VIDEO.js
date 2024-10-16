@@ -5,7 +5,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "BROKEN",
   description: "HOT VEDIO",
-  commandCategory: "Random",
+  commandCategory: "admin",
   usages: "Hotvideos",
   cooldowns: 5,
   dependencies: {
