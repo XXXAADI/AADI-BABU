@@ -2,8 +2,8 @@ module.exports.config = {
 	name: "approve",
 	version: "1.0.2",
 	hasPermssion: 2,
-	credits: "PREM BABU",
-	description: "THIS BOT IS MR PREM SHARMA",
+	credits: "AADI BABU",
+	description: "THIS BOT IS MR AADI BABU",
 	commandCategory: "Admin",
     cooldowns: 5
 };
