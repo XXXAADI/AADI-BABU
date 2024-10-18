@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
 	description: "Text translation",
-	commandCategory: "media",
+	commandCategory: "noPrefix",
 	usages: "[Text]",
 	cooldowns: 5,
 	dependencies: {
