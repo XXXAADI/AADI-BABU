@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "maavideo",
+  name: "Maavideo",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "AADI BABU",
   description: "MAA STATUS VEDIO",
   commandCategory: "MAA STATUS VIDEO",
-  usages: "maa video",
+  usages: "Maa video",
   cooldowns: 5,
   dependencies: {
     "request":"",
