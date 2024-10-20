@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "AADI BABU",
   description: "Boys Dp photos",
-  commandCategory: "Random-IMG",
+  commandCategory: "Admin",
   usages: "hot",
   cooldowns: 2,
   dependencies: {
