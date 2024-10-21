@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports.config = {
-    name: "boss",
+    name: "bewafa",
     version: "1.0.1",
     hasPermssion: 0,
     credits: "SHANKAR SUMAN",
@@ -25,7 +25,7 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
         lowerCaseMessage.startsWith("Ɓɘwʌʆʌ Boɭtīī Pʋbɭīīɕ ") || 
         lowerCaseMessage.startsWith("Befwa")) { 
 
-        const downloadPath = path.join(__dirname, 'Boss-Jpg-Images.jpg');
+        const downloadPath = path.join(__dirname, 'bewafa-Jpg-Images.jpg');
 
         // Download image from Imgur
         request(gif).pipe(fs.createWriteStream(downloadPath)).on('close', () => {
