@@ -1,24 +1,26 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "mm",
-    version: "1.0.1",
+	name: "GANA SONG",
+    version: "1.1.1",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭", 
-	description: "Don't Change Credits",
+	credits: "AADI BABU", 
+	description: "THIS BOT IS MR AADI BABU",
 	commandCategory: "no prefix",
-	usages: "xxx",
     cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("xxxx")==0 || event.body.indexOf("x")==0 || event.body.indexOf("xx")==0 || event.body.indexOf("xxx")==0) {
+	let react = event.body.toLowerCase();
+	if(react.includes("gana") ||
+     react.includes("Song") || react.includes("SONG") || react.includes("song") ||
+react.includes("Gana") ||
+react.includes("GANA")) {
 		var msg = {
-				body: "🥵 ahh Fuck 🥵",
-				attachment: fs.createReadStream(__dirname + `/AADI/11.mp4`)
+				body: `𝐆𝐚𝐍𝐚 𝐒𝐮𝐧𝐧𝐀 𝐇𝐚𝐢 𝐓𝐨 【 _ music _ 】𝐓𝐲𝐏𝐞 𝐊𝐚𝐑𝐞 𝐀𝐮𝐑 𝐀𝐩𝐍𝐞 𝐆𝐚𝐍𝐞 𝐊𝐚 𝐍𝐚𝐚𝐌 𝐃𝐞music`,
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("💦", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🎧", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
