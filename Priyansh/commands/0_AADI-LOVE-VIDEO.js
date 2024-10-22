@@ -1,3 +1,4 @@
+/** THIS FULL BOT COMMAND FILE AND ALL API CREATE BY BADOL CHAT DONT CHINGE THE MY ANY CODE 🤙🖤📿  **/
 module.exports.config = {
   name: "love video",
   version: "1.0.0",
@@ -19,7 +20,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["☟  ========== ☟ ==========  ☟                                                         \n\n●===========================●\n\n𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝐀𝐚̃𝐃𝐢   𝐁𝐚𝐁𝐮 : 255"];
+   var hi = ["☟  ========== ☟ ==========  ☟                                                         ●===========================●                              𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝐀𝐚̃𝐃𝐢   𝐁𝐚𝐁𝐮"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link =[
 
