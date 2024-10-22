@@ -3,7 +3,7 @@ module.exports.config = {
         name: "chaumin",
     version: "1.0.1",
         hasPermssion: 0,
-        credits: "FAIZ ANSARI", 
+        credits: "AADI BABU", 
         description: "hihihihi",
         commandCategory: "no prefix",
         usages: "chaumin",
@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         if (event.body.indexOf("chaumin")==0 || event.body.indexOf("Chaumin")==0 || event.body.indexOf("CHAUMIN")==0 || event.body.indexOf("chauminn")==0) {
                 var msg = {
                                 body: "=𝐎𝐰𝐧𝐞𝐫 ➻  𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 \n____________________________________\n 𝐘𝐚𝐚 𝐋𝐨𝐨 𝐁𝐚𝐁𝐲 𝐜𝐇𝐚𝐔𝐦𝐈𝐧 \n ____________________________________ ",
-                                attachment: fs.createReadStream(__dirname + `/cache/chaumin.gif`)
+                                attachment: fs.createReadStream(__dirname + `/noprefix/8a9f84ed741b6df2854fb136dd028e79.jpg`)
                         }
                         api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🍜", event.messageID, (err) => {}, true)
