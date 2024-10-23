@@ -3,7 +3,6 @@ module.exports.config = {
   version: "1.0.0",
   permssion: 0,
   credits: "AADI BABU",
-  prefix:true,
   description: "SAD VEDIO",
   category: "I C C",
   usages: "sad video",
