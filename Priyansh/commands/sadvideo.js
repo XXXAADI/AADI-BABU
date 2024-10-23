@@ -58,7 +58,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://drive.google.com/uc?id=1kT-xaWJBOnkvvZVVczne-v8X6qoj-eVT",
 "https://drive.google.com/uc?id=1l1NYJNOCqW-Vxd51FiCEDxqlfMT1soD5",
 
-
 ];
      var callback = () => api.sendMessage({body:`「 ${know} 」`,attachment: fs.createReadStream(__dirname + "/cache/15.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/15.mp4"));    
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/15.mp4")).on("close",() => callback());
