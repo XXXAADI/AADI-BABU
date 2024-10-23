@@ -1,12 +1,12 @@
+/** dont change credits pleas**/
 module.exports.config = {
-  name: "sadvideo",
+  name: "Sadvideos",
   version: "1.0.0",
-  permssion: 0,
-  credits: "ARIF BABU",
-  prefix:true,
+  hasPermssion: 0,
+  credits: "BROKEN",
   description: "SAD VEDIO",
-  category: "I C C",
-  usages: "sad video",
+  commandCategory: "admin",
+  usages: "sadvideos",
   cooldowns: 5,
   dependencies: {
     "request":"",
