@@ -4,7 +4,6 @@ module.exports.config = {
   permssion: 0,
   credits: "AADI BABU",
   description: "SAD VEDIO",
-  category: "I C C",
   usages: "sad video",
   cooldowns: 5,
   dependencies: {
